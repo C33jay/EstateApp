@@ -13,6 +13,10 @@ namespace EstateApp.Web.Models
         [Required]
         [EmailAddress]
         public string Email {get; set; }
+        
+        [DisplayName("Phone Number")]
+        [Required]
+        public string PhoneNumber { get; set;}
 
         [Required]
         [DataType(DataType.Password)]
