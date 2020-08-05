@@ -1,3 +1,5 @@
+using System.Runtime.Serialization;
+using System.Transactions;
 using System;
 using System.Threading.Tasks;
 using EstateApp.Data.DatabaseContexts.ApplicationDbContext;
@@ -62,6 +64,7 @@ namespace EstateApp.Web
 
             services.AddControllersWithViews();
             services.AddTransient<IAccountsService, AccountsService>();
+            services.AddTransient<IPropertyService, PropertyService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
