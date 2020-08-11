@@ -9,7 +9,8 @@ using EstateApp.Web.Interfaces;
 using EstateApp.Data.DatabaseContexts.ApplicationDbContext;
 using System.Threading.Tasks;
 using EstateApp.Web.Models;
-using EstateApp.Date.Entities;
+using EstateApp.Data.Entities;
+using System.Collections.Generic;
 
 namespace EstateApp.Web.Services
 {
@@ -21,7 +22,11 @@ namespace EstateApp.Web.Services
         {
             _dbContext = dbContext;
         }
-
+        
+        public IEnumerable<Property> GetAllProperties()
+        {
+            return _dbContext.Properties;
+        }
         public async Task AddProperty(PropertyModel model)
         {
             var property = new Property

@@ -1,6 +1,6 @@
 using EstateApp.Data.Entities;
 
-namespace EstateApp.Date.Entities
+namespace EstateApp.Data.Entities
 {
     public class Property : BaseEntity
     {

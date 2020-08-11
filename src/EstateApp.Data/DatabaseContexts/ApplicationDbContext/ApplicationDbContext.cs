@@ -1,5 +1,4 @@
 using EstateApp.Data.Entities;
-using EstateApp.Date.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace EstateApp.Data.DatabaseContexts.ApplicationDbContext

@@ -1,1 +1,14 @@
+@model IEnumerable<EstateApp.Data.Entities.Property>
+
 <h1>Property Page</h1>
+
+@if(Model is object)
+
+@foreach (var Property in Model)
+{
+    <h3>@Property.Title</h3>
+    <hr/>
+    <p>@Property.Price</p>
+    <p>@Property.Address</p>
+    <p>@Property.ContactPhoneNumber</p>
+}
